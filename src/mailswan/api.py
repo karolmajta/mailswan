@@ -7,7 +7,9 @@ api = Api(app)
 session = db.db.session
 
 class User(Resource):
+
     def put(self, email):
+        data
         user = db.User(email=email)
         session.add(user)
         session.commit()
